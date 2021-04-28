@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import useSignUpForm from "../components/SignUpForm/useSignUpForm";
-import api from "../services/api";
 import Button from "@material-ui/core/Button";
 
 export default function RegisterUser() {
@@ -43,7 +42,9 @@ export default function RegisterUser() {
             value={inputs.password}
           />
         </div>
-        <button type="submit">Sign Up</button>
+        <div>
+        <Button type="submit" variant="contained" color="primary" disableElevation>Registrar</Button>
+        </div>
       </form>
     </>
   );
